@@ -5,22 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ride extends Model
+class Reservation extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'start_location',
-        'end_location',
-        'departure_day',
-        'departure_time',
-        'available_seats',
-        'price',
+        'user_id',
+        'ride_id',
         'status',
     ];
 
-    public function reservations(){
-        return $this->hasMany(reservation::class);
+    public function ride(){
+        return $this->belongsto(ride::class);
     }
 
     public function user(){
