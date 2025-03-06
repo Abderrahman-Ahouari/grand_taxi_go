@@ -32,3 +32,5 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 Route::get('/send_welcom', [emailController::class, 'SendWelcomEmail']);
+
+Route::get('/ridesCatalogue', [RideController::class, 'getRides'])->name('ridesCatalogue');
