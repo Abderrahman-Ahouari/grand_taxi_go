@@ -131,7 +131,7 @@
         <div class="container flex items-center justify-between mx-auto">
             <a href="#" class="flex items-center text-2xl font-bold text-white">
                 <i class="mr-2 fas fa-taxi"></i>
-                TaxiRide
+               GrandTaxiGo
             </a>
             
             <div class="hidden space-x-8 md:flex">
@@ -146,7 +146,7 @@
                 </button>
                 
                 <div id="profileMenu" class="w-48 px-3 py-2 profile-menu">
-                    <a href="#" class="block px-2 py-2 text-gray-700 transition duration-300 rounded-md hover:bg-gray-100">
+                    <a href="../profile/" class="block px-2 py-2 text-gray-700 transition duration-300 rounded-md hover:bg-gray-100">
                         <i class="mr-2 fas fa-user"></i> My Profile
                     </a>
                     <div class="divider"></div>
@@ -193,241 +193,61 @@
             </div>
         </div>
         
+        
         <!-- Rides Grid -->
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <!-- Ride Card 1 -->
-            <div class="shadow-md taxi-card">
-                <div class="relative">
-                    <div class="h-40 bg-gradient-to-r from-blue-500 to-purple-600"></div>
-                    <div class="absolute px-3 py-1 bg-white rounded-md shadow-md bottom-3 left-3">
-                        <span class="font-bold text-gray-800">Monday</span>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <div class="mb-4">
-                        <div class="flex items-center mb-2">
-                            <span class="location-dot start-dot"></span>
-                            <p class="font-medium text-gray-700">Downtown</p>
-                        </div>
-                        <div class="border-l-2 border-dashed border-gray-300 h-6 ml-1.5"></div>
-                        <div class="flex items-center">
-                            <span class="location-dot end-dot"></span>
-                            <p class="font-medium text-gray-700">Airport</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex justify-between mb-4">
-                        <span class="tag tag-time">
-                            <i class="mr-1 far fa-clock"></i> 08:00 AM
-                        </span>
-                        <span class="tag tag-seats">
-                            <i class="mr-1 fas fa-user"></i> 3 seats
-                        </span>
-                    </div>
-                    
-                    <div class="flex items-center justify-between">
-                        <div class="ride-price">$25.50</div>
-                        <a href="#" class="book-button">
-                            Book Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Ride Card 2 -->
-            <div class="shadow-md taxi-card">
-                <div class="relative">
-                    <div class="h-40 bg-gradient-to-r from-green-500 to-blue-500"></div>
-                    <div class="absolute px-3 py-1 bg-white rounded-md shadow-md bottom-3 left-3">
-                        <span class="font-bold text-gray-800">Monday</span>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <div class="mb-4">
-                        <div class="flex items-center mb-2">
-                            <span class="location-dot start-dot"></span>
-                            <p class="font-medium text-gray-700">Mall</p>
-                        </div>
-                        <div class="border-l-2 border-dashed border-gray-300 h-6 ml-1.5"></div>
-                        <div class="flex items-center">
-                            <span class="location-dot end-dot"></span>
-                            <p class="font-medium text-gray-700">University</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex justify-between mb-4">
-                        <span class="tag tag-time">
-                            <i class="mr-1 far fa-clock"></i> 10:30 AM
-                        </span>
-                        <span class="tag tag-seats">
-                            <i class="mr-1 fas fa-user"></i> 2 seats
-                        </span>
-                    </div>
-                    
-                    <div class="flex items-center justify-between">
-                        <div class="ride-price">$18.75</div>
-                        <a href="#" class="book-button">
-                            Book Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Ride Card 3 -->
-            <div class="shadow-md taxi-card">
-                <div class="relative">
-                    <div class="h-40 bg-gradient-to-r from-yellow-500 to-red-500"></div>
-                    <div class="absolute px-3 py-1 bg-white rounded-md shadow-md bottom-3 left-3">
-                        <span class="font-bold text-gray-800">Tuesday</span>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <div class="mb-4">
-                        <div class="flex items-center mb-2">
-                            <span class="location-dot start-dot"></span>
-                            <p class="font-medium text-gray-700">Beach Resort</p>
-                        </div>
-                        <div class="border-l-2 border-dashed border-gray-300 h-6 ml-1.5"></div>
-                        <div class="flex items-center">
-                            <span class="location-dot end-dot"></span>
-                            <p class="font-medium text-gray-700">City Center</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex justify-between mb-4">
-                        <span class="tag tag-time">
-                            <i class="mr-1 far fa-clock"></i> 09:15 AM
-                        </span>
-                        <span class="tag tag-seats">
-                            <i class="mr-1 fas fa-user"></i> 4 seats
-                        </span>
-                    </div>
-                    
-                    <div class="flex items-center justify-between">
-                        <div class="ride-price">$32.00</div>
-                        <a href="#" class="book-button">
-                            Book Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Ride Card 4 -->
-            <div class="shadow-md taxi-card">
-                <div class="relative">
-                    <div class="h-40 bg-gradient-to-r from-pink-500 to-purple-500"></div>
-                    <div class="absolute px-3 py-1 bg-white rounded-md shadow-md bottom-3 left-3">
-                        <span class="font-bold text-gray-800">Wednesday</span>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <div class="mb-4">
-                        <div class="flex items-center mb-2">
-                            <span class="location-dot start-dot"></span>
-                            <p class="font-medium text-gray-700">Train Station</p>
-                        </div>
-                        <div class="border-l-2 border-dashed border-gray-300 h-6 ml-1.5"></div>
-                        <div class="flex items-center">
-                            <span class="location-dot end-dot"></span>
-                            <p class="font-medium text-gray-700">Business Park</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex justify-between mb-4">
-                        <span class="tag tag-time">
-                            <i class="mr-1 far fa-clock"></i> 07:45 AM
-                        </span>
-                        <span class="tag tag-seats">
-                            <i class="mr-1 fas fa-user"></i> 1 seat
-                        </span>
-                    </div>
-                    
-                    <div class="flex items-center justify-between">
-                        <div class="ride-price">$22.25</div>
-                        <a href="#" class="book-button">
-                            Book Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
+              
+            @foreach ($rides as $ride)
             <!-- Ride Card 5 -->
             <div class="shadow-md taxi-card">
                 <div class="relative">
                     <div class="h-40 bg-gradient-to-r from-teal-500 to-green-500"></div>
                     <div class="absolute px-3 py-1 bg-white rounded-md shadow-md bottom-3 left-3">
-                        <span class="font-bold text-gray-800">Thursday</span>
+                        <span class="font-bold text-gray-800">{{ $ride->departure_day }}</span>
                     </div>
                 </div>
                 <div class="p-5">
                     <div class="mb-4">
                         <div class="flex items-center mb-2">
                             <span class="location-dot start-dot"></span>
-                            <p class="font-medium text-gray-700">Shopping Center</p>
+                            <p class="font-medium text-gray-700">{{$ride->start_location}}</p>
                         </div>
                         <div class="border-l-2 border-dashed border-gray-300 h-6 ml-1.5"></div>
                         <div class="flex items-center">
                             <span class="location-dot end-dot"></span>
-                            <p class="font-medium text-gray-700">Convention Center</p>
+                            <p class="font-medium text-gray-700">{{$ride->end_location}}</p>
                         </div>
                     </div>
                     
                     <div class="flex justify-between mb-4">
                         <span class="tag tag-time">
-                            <i class="mr-1 far fa-clock"></i> 11:15 AM
+                            <i class="mr-1 far fa-clock"></i> {{$ride->departure_time}}
                         </span>
                         <span class="tag tag-seats">
-                            <i class="mr-1 fas fa-user"></i> 3 seats
+                            <i class="mr-1 fas fa-user"></i> {{$ride->available_seats}}
                         </span>
                     </div>
                     
                     <div class="flex items-center justify-between">
-                        <div class="ride-price">$27.50</div>
-                        <a href="#" class="book-button">
-                            Book Now
-                        </a>
+                        <div class="ride-price">${{$ride->price}}</div>
+
+                        <form action="{{ route('rideReservation', ['id' => $ride->id]) }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="trajet_id" value="{{ $ride->id }}">
+                            <button type="submit" class="px-4 py-2 font-semibold text-white transition bg-gray-500 rounded-lg shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2">
+                                Réserver
+                            </button>
+                        </form>
+                    {{-- <form action="{{ route('rideReservation') }}" method="POST">
+                        @csrf
+                        <input type="hidden" name="ride_id" value="{{$ride->id}}">
+                        <button type="submit" class="book-button">Book Now</button>
+                    </form> --}}
                     </div>
                 </div>
             </div>
-            
-            <!-- Ride Card 6 -->
-            <div class="shadow-md taxi-card">
-                <div class="relative">
-                    <div class="h-40 bg-gradient-to-r from-indigo-500 to-blue-500"></div>
-                    <div class="absolute px-3 py-1 bg-white rounded-md shadow-md bottom-3 left-3">
-                        <span class="font-bold text-gray-800">Friday</span>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <div class="mb-4">
-                        <div class="flex items-center mb-2">
-                            <span class="location-dot start-dot"></span>
-                            <p class="font-medium text-gray-700">Hotel Zone</p>
-                        </div>
-                        <div class="border-l-2 border-dashed border-gray-300 h-6 ml-1.5"></div>
-                        <div class="flex items-center">
-                            <span class="location-dot end-dot"></span>
-                            <p class="font-medium text-gray-700">Entertainment District</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex justify-between mb-4">
-                        <span class="tag tag-time">
-                            <i class="mr-1 far fa-clock"></i> 08:30 PM
-                        </span>
-                        <span class="tag tag-seats">
-                            <i class="mr-1 fas fa-user"></i> 5 seats
-                        </span>
-                    </div>
-                    
-                    <div class="flex items-center justify-between">
-                        <div class="ride-price">$35.00</div>
-                        <a href="#" class="book-button">
-                            Book Now
-                        </a>
-                    </div>
-                </div>
-            </div>
+            @endforeach        
+
         </div>
         
         <!-- Pagination -->

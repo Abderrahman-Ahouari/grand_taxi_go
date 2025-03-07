@@ -3,6 +3,10 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\emailcontroller;  
+use App\Http\Controllers\RideController;  
+use App\Http\Controllers\ReservationController;  
+use App\Http\Controllers\Controller;  
+
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +38,13 @@ require __DIR__.'/auth.php';
 Route::get('/send_welcom', [emailController::class, 'SendWelcomEmail']);
 
 Route::get('/ridesCatalogue', [RideController::class, 'getRides'])->name('ridesCatalogue');
+
+Route::post('/rideReservation/{id}', [ReservationController::class, 'create'])->name('rideReservation');
+
+// Route POST pour soumettre les données
+// Route::post('/rideReservation', [ReservationController::class, 'store'])->name('rideReservation.store');
+
+
+
+
+

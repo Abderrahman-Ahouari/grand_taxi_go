@@ -13,7 +13,7 @@ class Reservation extends Model
         'user_id',
         'ride_id',
         'status',
-    ];
+    ]; 
 
     public function ride(){
         return $this->belongsto(ride::class);

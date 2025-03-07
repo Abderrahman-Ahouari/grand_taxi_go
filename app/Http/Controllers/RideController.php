@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ride;
 
 class RideController extends Controller
 {
@@ -21,7 +22,7 @@ class RideController extends Controller
         ]);
     
 
-        $ride = Ride::create($validated);
+        Ride::create($validated);
     
 
         return redirect()->back();
@@ -62,7 +63,8 @@ class RideController extends Controller
     public function getRides(){
         $rides = ride::all();
 
-        return view('ridesCatalogue', compact($rides));
+        // return view('ridesCatalogue');
+        return view('ridesCatalogue', compact('rides'));
     }
 
 
